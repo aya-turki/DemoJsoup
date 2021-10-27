@@ -23,7 +23,7 @@ public class Demo {
 //				+ "<body><p>Parsed HTML into a doc.</p></body></html>";
 		OutputSettings settings = new OutputSettings();
 		settings.prettyPrint(false);	 
-		Document doc = Jsoup.connect("https://ais.usvisa-info.com/en-ar/niv/information/faqs").get();		
+		Document doc = Jsoup.connect("http").get();		
 		List<String> doc1 = doc.getAllElements().eachText();	
 	//	List<String> doc1 = doc.getAllElements().eachText();	
 	for (String element : doc1) {
